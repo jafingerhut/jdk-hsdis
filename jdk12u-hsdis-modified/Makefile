@@ -100,7 +100,7 @@ CFLAGS/amd64	+= -m64
 CFLAGS/ppc64	+= -m64
 CFLAGS/ppc64le  += -m64 -DABI_ELFv2
 else
-ARCH=$(ARCH2:amd64=i386)
+ARCH=$(ARCH2:amd64=amd64)
 ifneq ($(findstring arm,$(ARCH)),)
 ARCH=arm
 endif
