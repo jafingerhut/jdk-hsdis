@@ -7,6 +7,29 @@ produces good results when building with recent versions of Ubuntu
 like Ubuntu 18.04 desktop Linux.
 
 
+# Usage
+
+If you want not to build the hsdis library from source code, but use
+one that has been compiled already and included in the `prebuilt`
+directory, install a JDK on your system, set the `JAVA_HOME`
+environment variable to point at that installation, and run this shell
+script:
+
+```bash
+$ ./bin/install-hsdis-into-jdk-ubuntu.sh
+```
+
+At this time, this has only been tested to work on these systems:
+
+* Ubuntu 16.04.6 64-bit (amd64) desktop Linux
+* Ubuntu 18.04.3 64-bit (amd64) desktop Linux
+
+If you have more than one JDK installed on your system, and wish to
+use this library on all of them, you must run that script multiple
+times, each time with JAVA_HOME set to a different JDK install
+directory.
+
+
 # Files
 
 These directories:
@@ -35,11 +58,5 @@ I have tested these instructions starting with a freshly installed
 version of Ubuntu 18.04.3 Linux.
 
 ```bash
-$ cd jdk12u-hsdis-modified
-$ sudo apt-get install curl texinfo build-essential
-$ BINUTILS_VER=2.31.1
-$ curl -O https://ftp.gnu.org/gnu/binutils/binutils-${BINUTILS_VER}.tar.bz2
-$ bzcat binutils-${BINUTILS_VER}.tar.bz2 | tar xkf -
-$ make BINUTILS=binutils-${BINUTILS_VER} clean
-$ make BINUTILS=binutils-${BINUTILS_VER}
+$ ./bin/build-hsdis-ubuntu.sh
 ```
