@@ -24,6 +24,10 @@ At this time, this has only been tested to work on these systems:
 * Ubuntu 16.04.6 64-bit (amd64) desktop Linux
 * Ubuntu 18.04.3 64-bit (amd64) desktop Linux
 
+I have not tested it, but [a similar repository
+exists](https://github.com/liuzhengyang/hsdis) and seems to have an
+already-compiled version of the hsdis library for macOS systems.
+
 If you have more than one JDK installed on your system, and wish to
 use this library on all of them, you must run that script multiple
 times, each time with JAVA_HOME set to a different JDK install
