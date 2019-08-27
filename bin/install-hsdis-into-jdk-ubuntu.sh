@@ -44,7 +44,7 @@ else
 fi
 
 echo ""
-JAVA_ARCH=`clojure -m leeuwenhoek.get-os-arch`
+JAVA_ARCH=`java -cp bin GetJdkOsArch`
 echo "JAVA_ARCH=${JAVA_ARCH}"
 LINUX_ARCH=`uname -m`
 echo "LINUX_ARCH=${LINUX_ARCH}"
