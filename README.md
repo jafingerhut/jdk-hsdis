@@ -6,6 +6,18 @@ slightly modified version of the code from JDK 12 that I have found
 produces good results when building with recent versions of Ubuntu
 like Ubuntu 18.04 desktop Linux.
 
+The hsdis library enables a running JVM to print assembly code
+listings of methods compiled by the JVM JIT compiler to native machine
+code.
+
+Some links to information on how to enable this when starting the JVM
+(search for the `PrintAssembly` option details), and interpreting the
+output:
+
+* [https://wiki.openjdk.java.net/display/HotSpot/PrintAssembly](https://wiki.openjdk.java.net/display/HotSpot/PrintAssembly)
+* [http://jpbempel.blogspot.com/2015/12/printassembly-output-explained.html](http://jpbempel.blogspot.com/2015/12/printassembly-output-explained.html)
+* [https://github.com/AdoptOpenJDK/jitwatch](https://github.com/AdoptOpenJDK/jitwatch)
+
 
 # Usage
 
